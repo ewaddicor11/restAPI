@@ -23,7 +23,7 @@ mongoose.connect(connectionString,
     const model = mongoose.model("Boston_AirBnB",mySchema,"Boston_AirBnB")
     app.get("/",(req,res)=>{
     // error handling
-    const zipcode= req.query['zipcode']
+    zipcode= req.query['zipcode']
     if(zipcode!==undefined){
         model.find({"zipcode": zipcode},(err,data)=>{
             if(err){
