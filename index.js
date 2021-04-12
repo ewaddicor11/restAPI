@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const app = express();
 const port = process.env.PORT || 3000;
-const connectionString = "mongodb+srv://bgreen3:ImBen@cluster0.fwvak.mongodb.net/Boston_AirBnB?retryWrites=true&w=majority"
+const connectionString = "mongodb+srv://admin:HQDmcPlR76Qg3Un2@cluster0.puj32.mongodb.net/Boston_AirBnB?retryWrites=true&w=majority"
 mongoose.connect(connectionString,
     {
         useNewUrlParser : true,
