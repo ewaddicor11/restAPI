@@ -24,7 +24,7 @@ mongoose.connect(connectionString,
 app.get("/",(req,res)=>{
     // error handling
     const zipcode= req.query['zipcode']
-    if(zipCode!==undefined){
+    if(zipcode!==undefined){
         model.find({"zipcode":zipcode},(err,data)=>{
             if(err){
                 console.log("Error getting data!")
