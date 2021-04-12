@@ -21,7 +21,7 @@ mongoose.connect(connectionString,
         zipcode:Number
     })
     const model = mongoose.model("Boston_AirBnB",mySchema,"Boston_AirBnB")
-app.get("/",(req,res)=>{
+    app.get("/",(req,res)=>{
     // error handling
     const zipcode= req.query['zipcode']
     if(zipcode!==undefined){
@@ -35,7 +35,7 @@ app.get("/",(req,res)=>{
         })
     }
     else {
-        res.status(400).json({"error": "The keys is not correct, it should be zipcode"})
+        res.status(400).json({"error": "The keys is not correct!!!!, it should be zipcode"})
     }
 })
 app.listen(port, ()=>{
